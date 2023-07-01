@@ -99,9 +99,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startWayPoint: {fileID: 0}
-  speed: 1
-  currentHealth: 5
-  coinsForKill: 5
+  speed: 1.5
+  currentHealth: 15
+  coinsForKill: 3
   damage: 1
 --- !u!95 &3149622367998322445
 Animator:

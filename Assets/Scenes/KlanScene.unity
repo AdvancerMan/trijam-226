@@ -902,12 +902,24 @@ PrefabInstance:
       objectReference: {fileID: 869954824}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: towersToDowngradeOnUpgrade.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: towersToDowngradeOnUpgrade.Array.data[0]
       value: 
       objectReference: {fileID: 1165343092}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[1]
+      value: 
+      objectReference: {fileID: 1803454525}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[2]
+      value: 
+      objectReference: {fileID: 1907277320}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[3]
+      value: 
+      objectReference: {fileID: 2137921834}
     - target: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1723,12 +1735,24 @@ PrefabInstance:
       objectReference: {fileID: 869954824}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: towersToDowngradeOnUpgrade.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: towersToDowngradeOnUpgrade.Array.data[0]
       value: 
       objectReference: {fileID: 1165343092}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[1]
+      value: 
+      objectReference: {fileID: 1907277320}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[2]
+      value: 
+      objectReference: {fileID: 1964443607}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[3]
+      value: 
+      objectReference: {fileID: 2137921834}
     - target: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2400,6 +2424,17 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1024066982 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+  m_PrefabInstance: {fileID: 1470463533}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494fdb5b665c7194c926406729743a83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1073085754
 GameObject:
   m_ObjectHideFlags: 0
@@ -3356,12 +3391,24 @@ PrefabInstance:
       objectReference: {fileID: 869954824}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: towersToDowngradeOnUpgrade.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: towersToDowngradeOnUpgrade.Array.data[0]
       value: 
-      objectReference: {fileID: 1165343092}
+      objectReference: {fileID: 1803454525}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[1]
+      value: 
+      objectReference: {fileID: 1907277320}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[2]
+      value: 
+      objectReference: {fileID: 1964443607}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[3]
+      value: 
+      objectReference: {fileID: 1914853541}
     - target: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3714,12 +3761,24 @@ PrefabInstance:
       objectReference: {fileID: 869954824}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: towersToDowngradeOnUpgrade.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: towersToDowngradeOnUpgrade.Array.data[0]
       value: 
       objectReference: {fileID: 1165343092}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[1]
+      value: 
+      objectReference: {fileID: 427923925}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[2]
+      value: 
+      objectReference: {fileID: 1024066982}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[3]
+      value: 
+      objectReference: {fileID: 1907277320}
     - target: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4266,6 +4325,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
   m_PrefabInstance: {fileID: 1701681322}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1803454525 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+  m_PrefabInstance: {fileID: 1701681322}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494fdb5b665c7194c926406729743a83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1818580354
 GameObject:
   m_ObjectHideFlags: 0
@@ -4510,12 +4580,24 @@ PrefabInstance:
       objectReference: {fileID: 869954824}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: towersToDowngradeOnUpgrade.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: towersToDowngradeOnUpgrade.Array.data[0]
       value: 
       objectReference: {fileID: 1165343092}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[1]
+      value: 
+      objectReference: {fileID: 427923925}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[2]
+      value: 
+      objectReference: {fileID: 1907277320}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[3]
+      value: 
+      objectReference: {fileID: 1914853541}
     - target: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -4526,7 +4608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.3333335
+      value: -5.333333
       objectReference: {fileID: 0}
     - target: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4562,11 +4644,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+--- !u!114 &1907277320 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+  m_PrefabInstance: {fileID: 2117643899}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494fdb5b665c7194c926406729743a83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1914853539 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
   m_PrefabInstance: {fileID: 732954587}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1914853541 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+  m_PrefabInstance: {fileID: 732954587}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494fdb5b665c7194c926406729743a83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1934998543
 GameObject:
   m_ObjectHideFlags: 0
@@ -4619,6 +4723,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
   m_PrefabInstance: {fileID: 2116939933}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1964443607 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+  m_PrefabInstance: {fileID: 2116939933}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494fdb5b665c7194c926406729743a83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1965631902
 GameObject:
   m_ObjectHideFlags: 0
@@ -9214,12 +9329,24 @@ PrefabInstance:
       objectReference: {fileID: 869954824}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: towersToDowngradeOnUpgrade.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: towersToDowngradeOnUpgrade.Array.data[0]
       value: 
-      objectReference: {fileID: 1165343092}
+      objectReference: {fileID: 1024066982}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[1]
+      value: 
+      objectReference: {fileID: 1907277320}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[2]
+      value: 
+      objectReference: {fileID: 1914853541}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[3]
+      value: 
+      objectReference: {fileID: 2137921834}
     - target: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -9283,12 +9410,24 @@ PrefabInstance:
       objectReference: {fileID: 869954824}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: towersToDowngradeOnUpgrade.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: towersToDowngradeOnUpgrade.Array.data[0]
       value: 
-      objectReference: {fileID: 1165343092}
+      objectReference: {fileID: 1024066982}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[1]
+      value: 
+      objectReference: {fileID: 1964443607}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[2]
+      value: 
+      objectReference: {fileID: 1914853541}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[3]
+      value: 
+      objectReference: {fileID: 2137921834}
     - target: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -9390,6 +9529,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
   m_PrefabInstance: {fileID: 1894460394}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2137921834 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+  m_PrefabInstance: {fileID: 1894460394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494fdb5b665c7194c926406729743a83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2141626939
 GameObject:
   m_ObjectHideFlags: 0
@@ -9462,12 +9612,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: towersToDowngradeOnUpgrade.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: towersToDowngradeOnUpgrade.Array.data[0]
       value: 
       objectReference: {fileID: 427923925}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[1]
+      value: 
+      objectReference: {fileID: 1907277320}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[2]
+      value: 
+      objectReference: {fileID: 2137921834}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: towersToDowngradeOnUpgrade.Array.data[3]
+      value: 
+      objectReference: {fileID: 1914853541}
     - target: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: m_RootOrder
       value: 0

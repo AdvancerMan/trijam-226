@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74137ccdbc931b94b9ddee540fc3d671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  range: 2
+  damage: 3
+  range: 2.5
   secondsToShoot: 0.8
   coinsToUpgradeToThisLevel: 3
 --- !u!1 &211788115870908392
@@ -92,8 +92,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74137ccdbc931b94b9ddee540fc3d671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
-  range: 1.75
+  damage: 1.5
+  range: 2.25
   secondsToShoot: 1
   coinsToUpgradeToThisLevel: 1
 --- !u!1 &659403194665442417
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74137ccdbc931b94b9ddee540fc3d671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.1
+  damage: 0.5
   range: 1.5
   secondsToShoot: 10
   coinsToUpgradeToThisLevel: 1
@@ -374,8 +374,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
-  range: 3
-  secondsToShoot: 0.75
+  range: 3.25
+  secondsToShoot: 0.5
   coinsToUpgradeToThisLevel: 10
 --- !u!1 &4594769764864720468
 GameObject:
@@ -558,10 +558,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74137ccdbc931b94b9ddee540fc3d671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 7.5
   range: 3.5
-  secondsToShoot: 0.75
-  coinsToUpgradeToThisLevel: 10
+  secondsToShoot: 0.25
+  coinsToUpgradeToThisLevel: 20
 --- !u!1 &8309951640709274495
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,7 +825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74137ccdbc931b94b9ddee540fc3d671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
-  range: 2.5
+  damage: 4
+  range: 2.9
   secondsToShoot: 0.75
-  coinsToUpgradeToThisLevel: 10
+  coinsToUpgradeToThisLevel: 5
