@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealthManager : MonoBehaviour {
 
@@ -15,6 +16,15 @@ public class PlayerHealthManager : MonoBehaviour {
 
     [SerializeField]
     private GameObject youWonWindow;
+
+    private bool gameIsFinished = false;
+
+    private void Update() {
+        if (gameIsFinished && Input.GetMouseButtonDown(0)) {
+            Scene currentScene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(currentScene.name);
+        }
+    }
 
     public void takeHealth(int amount) {
         if (playerHealth <= 0) {
@@ -31,6 +41,7 @@ public class PlayerHealthManager : MonoBehaviour {
 
     private void handlePlayerLose() {
         youLostWindow.SetActive(true);
+        gameIsFinished = true;
     }
 
     public void handlePlayerWin() {
@@ -39,5 +50,6 @@ public class PlayerHealthManager : MonoBehaviour {
             return;
         }
         youWonWindow.SetActive(true);
+        gameIsFinished = true;
     }
 }

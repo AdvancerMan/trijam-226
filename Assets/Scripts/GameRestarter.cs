@@ -13,7 +13,7 @@ public class GameRestarter : MonoBehaviour {
     }
 
     private void restartGame() {
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
+        //Scene currentScene = SceneManager.GetActiveScene();
+        //SceneManager.LoadScene(currentScene.name);
     }
 }
