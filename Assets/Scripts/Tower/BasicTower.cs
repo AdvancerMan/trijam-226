@@ -41,6 +41,12 @@ public class BasicTower : MonoBehaviour {
     [SerializeField]
     private TMP_Text costCoinsTextMesh;
 
+    [SerializeField]
+    private GameObject returnCoinsVisual;
+
+    [SerializeField]
+    private TMP_Text returnCoinsTextMesh;
+
     private const float LEVEL_CHANGE_DELAY_SECONDS = 1f;
     private float sinceLastUpgrade = LEVEL_CHANGE_DELAY_SECONDS;
     private float sinceLastDowngrade = LEVEL_CHANGE_DELAY_SECONDS;
@@ -80,6 +86,7 @@ public class BasicTower : MonoBehaviour {
         }
         foreach (var neighborTower in towersToDowngradeOnUpgrade) {
             neighborTower.possibleDowngradeVisual.SetActive(true);
+            neighborTower.returnCoinsVisual.SetActive(true);
         }
         updateVisualData();
     }
@@ -92,6 +99,14 @@ public class BasicTower : MonoBehaviour {
         } else {
             costCoinsVisual.SetActive(false);
         }
+
+        foreach (var neighborTower in towersToDowngradeOnUpgrade) {
+            if (currentLevel > 0) {
+                neighborTower.returnCoinsTextMesh.text = (neighborTower.levelDescriptors[neighborTower.currentLevel].coinsToUpgradeToThisLevel / 2).ToString();
+            } else {
+                neighborTower.returnCoinsVisual.SetActive(false);
+            }
+        }
     }
 
     private void OnMouseExit() {
@@ -99,6 +114,7 @@ public class BasicTower : MonoBehaviour {
         costCoinsVisual.SetActive(false);
         foreach (var neighborTower in towersToDowngradeOnUpgrade) {
             neighborTower.possibleDowngradeVisual.SetActive(false);
+            neighborTower.returnCoinsVisual.SetActive(false);
         }
     }
 
@@ -128,6 +144,9 @@ public class BasicTower : MonoBehaviour {
         if (currentLevel == 0) {
             return;
         }
+
+        TowerLevelDescriptor descriptor = levelDescriptors[currentLevel];
+        moneyManager.addCoins(descriptor.coinsToUpgradeToThisLevel / 2);
 
         sinceLastDowngrade = 0f;
         currentLevel--;
