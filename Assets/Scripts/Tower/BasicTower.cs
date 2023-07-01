@@ -44,6 +44,7 @@ public class BasicTower : MonoBehaviour {
     private void Start () {
         enemyManager = FindObjectOfType<EnemyManager>();
         moneyManager = FindObjectOfType<MoneyManager>();
+        applyCurrentLevelDescriptor();
     }
 
     private void OnDrawGizmosSelected() {
