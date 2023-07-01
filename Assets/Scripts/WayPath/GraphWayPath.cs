@@ -52,8 +52,7 @@ public class GraphWayPath : MonoBehaviour {
                 }
 
                 Gizmos.color = Color.green;
-                Gizmos.DrawLine(currentPointPosition, middleLinePoint);
-                Gizmos.DrawLine(middleLinePoint, adjacentPointPosition);
+                Gizmos.DrawLine(currentPointPosition, adjacentPointPosition);
 
                 Vector3 arrowPathDirection = (middleLinePoint == adjacentPointPosition ? currentPointPosition : middleLinePoint) - adjacentPointPosition;
                 Vector3 arrowSideVector = arrowPathDirection.normalized * gizmosWayPathArrowLength;
