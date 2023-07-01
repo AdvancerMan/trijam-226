@@ -101,7 +101,7 @@ MonoBehaviour:
   startWayPoint: {fileID: 0}
   speed: 1.5
   currentHealth: 15
-  coinsForKill: 2
+  coinsForKill: 1
   damage: 1
 --- !u!95 &3149622367998322445
 Animator:
