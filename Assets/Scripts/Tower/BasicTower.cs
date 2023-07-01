@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -22,6 +23,16 @@ public class BasicTower : MonoBehaviour {
     [SerializeField]
     private TMP_Text levelTextMesh;
 
+    [SerializeField]
+    private GameObject upgradeVisual;
+
+    [SerializeField]
+    private GameObject downgradeVisual;
+
+    private const float LEVEL_CHANGE_DELAY_SECONDS = 1f;
+    private float sinceLastUpgrade = LEVEL_CHANGE_DELAY_SECONDS;
+    private float sinceLastDowngrade = LEVEL_CHANGE_DELAY_SECONDS;
+
     private float secondsSinceShoot = 0;
 
     private float damage = 1;
@@ -40,6 +51,7 @@ public class BasicTower : MonoBehaviour {
 
     private void Update() {
         handleShooting();
+        handleLevelChangeVisual();
     }
 
     private void OnMouseDown() {
@@ -59,11 +71,20 @@ public class BasicTower : MonoBehaviour {
         levelTextMesh.text = "Level: " + currentLevel;
     }
 
+    private void handleLevelChangeVisual() {
+        sinceLastUpgrade += Time.deltaTime;
+        upgradeVisual.SetActive(sinceLastUpgrade < LEVEL_CHANGE_DELAY_SECONDS);
+
+        sinceLastDowngrade += Time.deltaTime;
+        downgradeVisual.SetActive(sinceLastDowngrade < LEVEL_CHANGE_DELAY_SECONDS);
+    }
+
     public void handleDowngrade() {
         if (currentLevel == 0) {
             return;
         }
 
+        sinceLastDowngrade = 0f;
         currentLevel--;
         applyCurrentLevelDescriptor();
     }
@@ -76,6 +97,7 @@ public class BasicTower : MonoBehaviour {
             return;
         }
 
+        sinceLastUpgrade = 0f;
         currentLevel++;
         applyCurrentLevelDescriptor();
 

@@ -101,3 +101,5 @@ MonoBehaviour:
   speed: 1
   currentHealth: 5
   coinsForKill: 5
+  upgradeVisual: {fileID: 0}
+  downgradeVisual: {fileID: 0}
