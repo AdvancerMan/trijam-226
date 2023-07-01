@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BasicEnemy : MonoBehaviour, IEnemy {
@@ -49,6 +48,8 @@ public class BasicEnemy : MonoBehaviour, IEnemy {
         } else {
             transform.position += direction.normalized * moveDistance;
         }
+
+        transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * Mathf.Sign(direction.x), transform.localScale.y, transform.localScale.z);
 
         if (currentWayPoint == null) {
             handleTargetHit();
