@@ -10,6 +10,12 @@ public class PlayerHealthManager : MonoBehaviour {
     [SerializeField]
     private TMP_Text playerHealthVisual;
 
+    [SerializeField]
+    private GameObject youLostWindow;
+
+    [SerializeField]
+    private GameObject youWonWindow;
+
     public void takeHealth(int amount) {
         if (playerHealth <= 0) {
             return;
@@ -24,10 +30,13 @@ public class PlayerHealthManager : MonoBehaviour {
     }
 
     private void handlePlayerLose() {
-        Debug.Log("You lose :(");
+        youLostWindow.SetActive(true);
     }
 
     public void handlePlayerWin() {
-        Debug.Log("You win :)");
+        if (playerHealth > 0) {
+            handlePlayerLose();
+        }
+        youWonWindow.SetActive(true);
     }
 }

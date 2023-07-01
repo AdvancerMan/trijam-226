@@ -61,7 +61,6 @@ public class BasicEnemy : MonoBehaviour, IEnemy {
     }
 
     private void handleDeath() {
-        moneyManager.addCoins(coinsForKill);
         enemyManager.removeEnemy(this);
         Destroy(gameObject);
     }
@@ -69,6 +68,7 @@ public class BasicEnemy : MonoBehaviour, IEnemy {
     public void hit(float damage) {
         currentHealth -= damage;
         if (currentHealth <= 0) {
+            moneyManager.addCoins(coinsForKill);
             handleDeath();
         }
     }
