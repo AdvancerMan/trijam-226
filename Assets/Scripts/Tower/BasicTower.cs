@@ -35,8 +35,10 @@ public class BasicTower : MonoBehaviour {
 
     private float secondsSinceShoot = 0;
 
-    private float damage = 1;
+    [SerializeField]
     private float range = 1;
+
+    private float damage = 1;
     private float secondsToShoot = 1;
 
     private void Start () {
@@ -58,9 +60,9 @@ public class BasicTower : MonoBehaviour {
         handleUpgrade();
     }
 
-    private void OnValidate() {
-        applyCurrentLevelDescriptor();
-    }
+    //private void OnValidate() {
+    //    applyCurrentLevelDescriptor();
+    //}
 
     private void applyCurrentLevelDescriptor() {
         TowerLevelDescriptor descriptor = levelDescriptors[currentLevel];
