@@ -100,8 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWayPoint: {fileID: 0}
   speed: 0.5
-  currentHealth: 0
-  coinsForKill: 1500
+  currentHealth: 1500
+  coinsForKill: 999999999
   damage: 5
 --- !u!95 &3149622367998322445
 Animator:
