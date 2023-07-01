@@ -3785,7 +3785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.3333335
+      value: 3.333333
       objectReference: {fileID: 0}
     - target: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9405,6 +9405,10 @@ PrefabInstance:
       value: Tower (4)
       objectReference: {fileID: 0}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: range
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: enemyManager
       value: 
       objectReference: {fileID: 869954824}
@@ -9434,7 +9438,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.3333333
+      value: 4.333333
       objectReference: {fileID: 0}
     - target: {fileID: 4594769764864720474, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9597,6 +9601,10 @@ PrefabInstance:
     - target: {fileID: 4594769764864720468, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: m_Name
       value: Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
+      propertyPath: range
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 4594769764864720473, guid: af605612a7c6a7d4cb8ac59387b2a300, type: 3}
       propertyPath: damage
