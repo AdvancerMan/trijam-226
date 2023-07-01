@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class WaveManager : MonoBehaviour {
 
+    private EnemyManager enemyManager;
+    private MoneyManager moneyManager;
+    private PlayerHealthManager playerHealthManager;
+
     [SerializeField]
     private TMP_Text waveNumber;
 
     private List<WaveDescriptor> waveDescriptors;
-    private EnemyManager enemyManager;
-    private MoneyManager moneyManager;
 
     private int currentWaveDescriptorIndex = -1;
 
     private void Start() {
         enemyManager = FindObjectOfType<EnemyManager>();
         moneyManager = FindObjectOfType<MoneyManager>();
+        playerHealthManager = FindObjectOfType<PlayerHealthManager>();
         updateWaveDescriptors();
     }
 
@@ -34,13 +37,12 @@ public class WaveManager : MonoBehaviour {
             }
             currentWaveDescriptorIndex++;
 
-            if (currentWaveDescriptorIndex >= waveDescriptors.Count) {
-                waveNumber.text = "You won!";
-            } else {
+            if (currentWaveDescriptorIndex < waveDescriptors.Count) {
                 waveNumber.text = "Wave " + (currentWaveDescriptorIndex + 1);
                 startSpawning();
+            } else {
+                playerHealthManager.handlePlayerWin();
             }
-
         }
     }
 

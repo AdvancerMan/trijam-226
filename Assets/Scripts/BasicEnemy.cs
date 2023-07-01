@@ -5,6 +5,7 @@ public class BasicEnemy : MonoBehaviour, IEnemy {
 
     private EnemyManager enemyManager;
     private MoneyManager moneyManager;
+    private PlayerHealthManager playerHealthManager;
 
     [SerializeField]
     public GraphWayPoint startWayPoint;
@@ -18,11 +19,15 @@ public class BasicEnemy : MonoBehaviour, IEnemy {
     [SerializeField]
     private int coinsForKill;
 
+    [SerializeField]
+    private int damage = 1;
+
     private GraphWayPoint currentWayPoint;
 
     private void Start() {
         enemyManager = FindObjectOfType<EnemyManager>();
         moneyManager = FindObjectOfType<MoneyManager>();
+        playerHealthManager = FindObjectOfType<PlayerHealthManager>();
         enemyManager.addEnemy(this);
         currentWayPoint = startWayPoint;
     }
@@ -51,7 +56,7 @@ public class BasicEnemy : MonoBehaviour, IEnemy {
     }
 
     private void handleTargetHit() {
-        Debug.Log("Target hit");
+        playerHealthManager.takeHealth(damage);
         handleDeath();
     }
 
