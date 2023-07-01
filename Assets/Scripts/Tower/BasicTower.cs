@@ -145,7 +145,7 @@ public class BasicTower : MonoBehaviour {
             return;
         }
 
-        TowerLevelDescriptor descriptor = levelDescriptors[currentLevel];
+        TowerLevelDescriptor descriptor = levelDescriptors[currentLevel]; 
         moneyManager.addCoins(descriptor.coinsToUpgradeToThisLevel / 2);
 
         sinceLastDowngrade = 0f;
@@ -170,6 +170,7 @@ public class BasicTower : MonoBehaviour {
                 neighborTower.handleDowngrade();
             }
         }
+        updateVisualData();
     }
 
     private void handleShooting() {
