@@ -1,7 +1,11 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class WaveManager : MonoBehaviour {
+
+    [SerializeField]
+    private TMP_Text waveNumber;
 
     private List<WaveDescriptor> waveDescriptors;
     private EnemyManager enemyManager;
@@ -29,15 +33,18 @@ public class WaveManager : MonoBehaviour {
                 moneyManager.addCoins(waveDescriptors[currentWaveDescriptorIndex].coinsRewardForWave);
             }
             currentWaveDescriptorIndex++;
-            startSpawning();
+
+            if (currentWaveDescriptorIndex >= waveDescriptors.Count) {
+                waveNumber.text = "You won!";
+            } else {
+                waveNumber.text = "Wave " + (currentWaveDescriptorIndex + 1);
+                startSpawning();
+            }
+
         }
     }
 
     private void startSpawning() {
-        if (currentWaveDescriptorIndex >= waveDescriptors.Count) {
-            return;
-        }
-
         WaveDescriptor currentWaveDescriptor = waveDescriptors[currentWaveDescriptorIndex];
         currentWaveDescriptor.startSpawning();
     }
