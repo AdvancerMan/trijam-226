@@ -7,7 +7,7 @@ public class BasicEnemy : MonoBehaviour, IEnemy {
     private MoneyManager moneyManager;
 
     [SerializeField]
-    private GraphWayPoint startWayPoint;
+    public GraphWayPoint startWayPoint;
 
     [SerializeField]
     private float speed;
