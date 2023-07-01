@@ -101,7 +101,7 @@ public class BasicTower : MonoBehaviour {
         }
 
         foreach (var neighborTower in towersToDowngradeOnUpgrade) {
-            if (currentLevel > 0) {
+            if (neighborTower.currentLevel > 0) {
                 neighborTower.returnCoinsTextMesh.text = (neighborTower.levelDescriptors[neighborTower.currentLevel].coinsToUpgradeToThisLevel / 2).ToString();
             } else {
                 neighborTower.returnCoinsVisual.SetActive(false);
