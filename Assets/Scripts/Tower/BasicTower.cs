@@ -29,6 +29,15 @@ public class BasicTower : MonoBehaviour {
     [SerializeField]
     private GameObject downgradeVisual;
 
+    [SerializeField]
+    private GameObject rangeVisual;
+
+    [SerializeField]
+    private GameObject costCoinsVisual;
+
+    [SerializeField]
+    private TMP_Text costCoinsTextMesh;
+
     private const float LEVEL_CHANGE_DELAY_SECONDS = 1f;
     private float sinceLastUpgrade = LEVEL_CHANGE_DELAY_SECONDS;
     private float sinceLastDowngrade = LEVEL_CHANGE_DELAY_SECONDS;
@@ -61,6 +70,29 @@ public class BasicTower : MonoBehaviour {
         handleUpgrade();
     }
 
+    private void OnMouseEnter() {
+        rangeVisual.SetActive(true);
+        if (currentLevel + 1 < levelDescriptors.Count) {
+            costCoinsVisual.SetActive(true);
+        }
+        updateVisualData();
+    }
+
+    private void updateVisualData() {
+        rangeVisual.transform.localScale = new Vector3(range, range, 1f);
+
+        if (currentLevel + 1 < levelDescriptors.Count) {
+            costCoinsTextMesh.text = levelDescriptors[currentLevel + 1].coinsToUpgradeToThisLevel.ToString();
+        } else {
+            costCoinsVisual.SetActive(false);
+        }
+    }
+
+    private void OnMouseExit() {
+        rangeVisual.SetActive(false);
+        costCoinsVisual.SetActive(false);
+    }
+
     //private void OnValidate() {
     //    applyCurrentLevelDescriptor();
     //}
@@ -72,6 +104,7 @@ public class BasicTower : MonoBehaviour {
         secondsToShoot = descriptor.secondsToShoot;
         secondsSinceShoot = 0f;
         levelTextMesh.text = "Level: " + currentLevel;
+        updateVisualData();
     }
 
     private void handleLevelChangeVisual() {
