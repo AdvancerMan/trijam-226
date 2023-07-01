@@ -30,6 +30,9 @@ public class BasicTower : MonoBehaviour {
     private GameObject downgradeVisual;
 
     [SerializeField]
+    public GameObject possibleDowngradeVisual;
+
+    [SerializeField]
     private GameObject rangeVisual;
 
     [SerializeField]
@@ -75,6 +78,9 @@ public class BasicTower : MonoBehaviour {
         if (currentLevel + 1 < levelDescriptors.Count) {
             costCoinsVisual.SetActive(true);
         }
+        foreach (var neighborTower in towersToDowngradeOnUpgrade) {
+            neighborTower.possibleDowngradeVisual.SetActive(true);
+        }
         updateVisualData();
     }
 
@@ -91,6 +97,9 @@ public class BasicTower : MonoBehaviour {
     private void OnMouseExit() {
         rangeVisual.SetActive(false);
         costCoinsVisual.SetActive(false);
+        foreach (var neighborTower in towersToDowngradeOnUpgrade) {
+            neighborTower.possibleDowngradeVisual.SetActive(false);
+        }
     }
 
     //private void OnValidate() {
