@@ -47,7 +47,7 @@ MonoBehaviour:
   damage: 2
   range: 10
   secondsToShoot: 0.8
-  coinsToUpgradeToThisLevel: 2
+  coinsToUpgradeToThisLevel: 3
 --- !u!1 &211788115870908392
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,7 +126,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4594769764864720474}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &882462053413883501
 SpriteRenderer:
@@ -261,7 +261,7 @@ RectTransform:
   m_Children:
   - {fileID: 6484338131708301768}
   m_Father: {fileID: 4594769764864720474}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -363,6 +363,7 @@ Transform:
   - {fileID: 6021769377094788428}
   - {fileID: 2410640009508482606}
   - {fileID: 3444080633467244865}
+  - {fileID: 1220866538045133597}
   - {fileID: 5192347945408742925}
   - {fileID: 2854624464793354333}
   - {fileID: 4204187366953866285}
@@ -438,6 +439,7 @@ MonoBehaviour:
   - {fileID: 2378771255510460519}
   - {fileID: 686880523058981332}
   - {fileID: 1881422261563736002}
+  - {fileID: 256324909054160178}
   towersToDowngradeOnUpgrade: []
   currentLevel: 1
   levelTextMesh: {fileID: 900740073733845530}
@@ -624,7 +626,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4594769764864720474}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6147819116456540113
 SpriteRenderer:
@@ -678,3 +680,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &8958831843721902190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1220866538045133597}
+  - component: {fileID: 256324909054160178}
+  m_Layer: 0
+  m_Name: Level 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1220866538045133597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8958831843721902190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4594769764864720474}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &256324909054160178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8958831843721902190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74137ccdbc931b94b9ddee540fc3d671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+  range: 125
+  secondsToShoot: 0.75
+  coinsToUpgradeToThisLevel: 10
