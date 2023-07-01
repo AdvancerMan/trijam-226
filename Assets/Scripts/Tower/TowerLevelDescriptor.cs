@@ -10,4 +10,7 @@ public class TowerLevelDescriptor : MonoBehaviour {
 
     [SerializeField]
     public float secondsToShoot = 1;
+
+    [SerializeField]
+    public int coinsToUpgradeToThisLevel = 1;
 }

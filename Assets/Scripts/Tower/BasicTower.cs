@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BasicTower : MonoBehaviour {
 
-    [SerializeField]
     private EnemyManager enemyManager;
+    private MoneyManager moneyManager;
 
     [SerializeField]
     private GameObject shootLinePrefab;
@@ -27,6 +27,11 @@ public class BasicTower : MonoBehaviour {
     private float damage = 1;
     private float range = 1;
     private float secondsToShoot = 1;
+
+    private void Start () {
+        enemyManager = FindObjectOfType<EnemyManager>();
+        moneyManager = FindObjectOfType<MoneyManager>();
+    }
 
     private void OnDrawGizmosSelected() {
         Gizmos.color = Color.red;
@@ -64,10 +69,15 @@ public class BasicTower : MonoBehaviour {
     }
 
     private void handleUpgrade() {
-        if (currentLevel + 1 < levelDescriptors.Count) {
-            currentLevel++;
-            applyCurrentLevelDescriptor();
+        if (currentLevel + 1 >= levelDescriptors.Count) {
+            return;
         }
+        if (!moneyManager.takeCoins(levelDescriptors[currentLevel + 1].coinsToUpgradeToThisLevel)) {
+            return;
+        }
+
+        currentLevel++;
+        applyCurrentLevelDescriptor();
 
         if (towersToDowngradeOnUpgrade != null) {
             foreach (var neighborTower in towersToDowngradeOnUpgrade) {

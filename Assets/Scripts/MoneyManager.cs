@@ -1,11 +1,25 @@
+using TMPro;
 using UnityEngine;
 
 public class MoneyManager : MonoBehaviour {
 
-    private int coins;
+    [SerializeField]
+    private TMP_Text coinsVisual;
+
+    [SerializeField]
+    private int coins = 0;
+
+    private void OnValidate() {
+        updateCoinsVisual();
+    }
+
+    private void updateCoinsVisual() {
+        coinsVisual.text = coins.ToString();
+    }
 
     public void addCoins(int amount) {
         coins += amount;
+        updateCoinsVisual();
     }
 
     public bool takeCoins(int amount) {
@@ -14,6 +28,7 @@ public class MoneyManager : MonoBehaviour {
         }
 
         coins -= amount;
+        updateCoinsVisual();
         return true;
     }
 }

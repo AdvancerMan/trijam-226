@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class BasicEnemy : MonoBehaviour, IEnemy {
 
+    private EnemyManager enemyManager;
+    private MoneyManager moneyManager;
+
     [SerializeField]
     private GraphWayPoint startWayPoint;
 
@@ -12,11 +15,13 @@ public class BasicEnemy : MonoBehaviour, IEnemy {
     private float currentHealth;
 
     [SerializeField]
-    private EnemyManager enemyManager;
+    private int coinsForKill;
 
     private GraphWayPoint currentWayPoint;
 
     private void Start() {
+        enemyManager = FindObjectOfType<EnemyManager>();
+        moneyManager = FindObjectOfType<MoneyManager>();
         enemyManager.addEnemy(this);
         currentWayPoint = startWayPoint;
     }
@@ -50,6 +55,7 @@ public class BasicEnemy : MonoBehaviour, IEnemy {
     }
 
     private void handleDeath() {
+        moneyManager.addCoins(coinsForKill);
         enemyManager.removeEnemy(this);
         Destroy(gameObject);
     }
