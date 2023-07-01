@@ -34,8 +34,9 @@ public class PlayerHealthManager : MonoBehaviour {
     }
 
     public void handlePlayerWin() {
-        if (playerHealth > 0) {
+        if (playerHealth == 0) {
             handlePlayerLose();
+            return;
         }
         youWonWindow.SetActive(true);
     }
